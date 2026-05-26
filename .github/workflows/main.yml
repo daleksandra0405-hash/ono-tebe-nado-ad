@@ -1,14 +1,8 @@
 name: Простой пример
-on: 
-  push:
-    branches: [ main ]
+on: push
 
 jobs:
   my-first-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Шаг 1: Скачивание кода репозитория
-        uses: actions/checkout@v4
-
-      - name: Шаг 2: Вывод текста в консоль
-        run: echo "Привет, это мой первый Workflow на GitHub!"
+      - run: echo "Привет, это мой первый Workflow на GitHub!"
