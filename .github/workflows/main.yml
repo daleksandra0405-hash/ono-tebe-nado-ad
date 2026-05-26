@@ -1,8 +1,0 @@
-name: Простой пример
-on: push
-
-jobs:
-  my-first-job:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "Привет, это мой первый Workflow на GitHub!"
